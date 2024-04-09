@@ -9,6 +9,7 @@ TagManager:
   - 002
   - 003
   - balaAviao
+  - obstaculo
   layers:
   - Default
   - TransparentFX

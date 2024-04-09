@@ -30,5 +30,13 @@ public class AviaoGravidade : MonoBehaviour
             TelaFinal.SetActive(true);
             pontosFinal.text = "Pontos: " + ContarPontos.coin.ToString(); // Acessando diretamente a variável coin de ContarPontos
         }
+
+        if (collision.gameObject.CompareTag("obstaculo"))
+        {
+            aviaoRigid.useGravity = true;
+            Time.timeScale = 0f;
+            TelaFinal.SetActive(true);
+            pontosFinal.text = "Pontos: " + ContarPontos.coin.ToString(); // Acessando diretamente a variável coin de ContarPontos
+        }
     }
 }
